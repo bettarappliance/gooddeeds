@@ -72,10 +72,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <h1 className="text-3xl" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
+              <a href="/" className="text-3xl hover:opacity-80 transition-opacity cursor-pointer" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
                 <span className="text-[#BA1038]">Good</span>
                 <span className="text-[#096DBC]">Deeds</span>
-              </h1>
+              </a>
             </div>
             <nav className="hidden lg:flex items-center space-x-8">
               <a href="#home" className="text-gray-900 hover:text-blue-600 font-medium">Home</a>
@@ -945,10 +945,10 @@ export default function Home() {
             {/* Company Information Column */}
             <div>
               <div className="mb-4">
-                <h2 className="text-2xl font-semibold" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
+                <a href="/" className="text-2xl font-semibold hover:opacity-80 transition-opacity cursor-pointer inline-block" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
                   <span className="text-[#BA1038]">Good</span>
                   <span className="text-[#096DBC]">Deeds</span>
-                </h2>
+                </a>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Your trusted partner for real estate, home improvement, renovation, plumbing, handyman, and appliance services in Washington, DC since 1880.
