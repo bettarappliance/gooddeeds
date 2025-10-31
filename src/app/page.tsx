@@ -204,16 +204,16 @@ export default function Home() {
 
             {/* Right Column - Content */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
                 About Jack Deeds, CPA
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
                 With over 30 years of experience in financial management and business leadership, 
                 Jack Deeds brings precision, integrity, and a results-oriented approach to real estate. 
                 His "Good Deeds" philosophy centers on helping clients navigate the complexities of 
                 buying and selling properties with transparency and trust.
               </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
                 Jack partners with <span className="text-[#096DBC] font-semibold">Bettar Services</span> to 
                 provide comprehensive property solutions, from real estate transactions to home repairs and 
                 appliance services, ensuring every client receives exceptional care from start to finish.
