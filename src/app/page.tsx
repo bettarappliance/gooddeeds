@@ -80,7 +80,6 @@ export default function Home() {
             <nav className="hidden lg:flex items-center space-x-8">
               <a href="#home" className="text-gray-900 hover:text-blue-600 font-medium">Home</a>
               <a href="#about" className="text-gray-900 hover:text-blue-600 font-medium">About</a>
-              <a href="#buy-sell" className="text-gray-900 hover:text-blue-600 font-medium">Buy/Sell</a>
               <a href="#properties" className="text-gray-900 hover:text-blue-600 font-medium">Properties</a>
               <div className="relative group">
                 <a href="#services" className="text-gray-900 hover:text-blue-600 font-medium flex items-center gap-1">
@@ -89,6 +88,12 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </a>
+                {/* Dropdown Menu */}
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <a href="#buy" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Buy a Home</a>
+                  <a href="#sell" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Sell a Home</a>
+                  <a href="#rent" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Rent a Home</a>
+                </div>
               </div>
               <a href="#contact" className="text-gray-900 hover:text-blue-600 font-medium">Contact Us</a>
               <a href="#blog" className="text-gray-900 hover:text-blue-600 font-medium">Blog</a>
@@ -556,7 +561,7 @@ export default function Home() {
               {/* FAQ Item 1 */}
               <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow duration-200 group">
                 <div className="flex justify-between items-center w-full text-left font-bold text-lg text-[#111827] group-hover:text-[#002D72] transition-colors duration-200 mb-3">
-                  What type of appliances do you service?
+                  What services does Good Deeds offer?
                   <svg 
                     className="w-5 h-5 text-[#002D72] transition-transform duration-200 group-hover:rotate-180" 
                     fill="none" 
@@ -567,14 +572,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-[#6B7280] leading-relaxed transition-all duration-300 overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100">
-                  We handle all major home appliances — refrigerators, ovens, dishwashers, washers, dryers, and more. Our licensed technicians are trained for most major brands.
+                  Good Deeds provides comprehensive real estate services including buying, selling, and renting properties. We also partner with Bettar Services to offer home improvements, renovations, plumbing, handyman services, and appliance sales and repairs.
                 </div>
               </div>
 
               {/* FAQ Item 2 */}
               <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow duration-200 group">
                 <div className="flex justify-between items-center w-full text-left font-bold text-lg text-[#111827] group-hover:text-[#002D72] transition-colors duration-200">
-                  What areas do you cover?
+                  What areas do you serve?
                   <svg 
                     className="w-5 h-5 text-[#002D72] transition-transform duration-200 group-hover:rotate-180" 
                     fill="none" 
@@ -585,14 +590,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-[#6B7280] leading-relaxed transition-all duration-300 overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100">
-                  We proudly serve Kensington, Bethesda, Chevy Chase, and the surrounding Maryland areas.
+                  We proudly serve Washington, DC, Kensington, Bethesda, Chevy Chase, and surrounding Maryland and DC metropolitan areas. Our team has extensive knowledge of the local real estate market.
                 </div>
               </div>
 
               {/* FAQ Item 3 */}
               <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow duration-200 group">
                 <div className="flex justify-between items-center w-full text-left font-bold text-lg text-[#111827] group-hover:text-[#002D72] transition-colors duration-200">
-                  Why should I choose Bettar Services?
+                  Why should I choose Good Deeds for real estate?
                   <svg 
                     className="w-5 h-5 text-[#002D72] transition-transform duration-200 group-hover:rotate-180" 
                     fill="none" 
@@ -603,14 +608,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-[#6B7280] leading-relaxed transition-all duration-300 overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100">
-                  We&apos;re family-owned, fully insured, and have been serving the community since 1945 with quality workmanship and trustworthy service.
+                  With over 30 years of experience in finance and business leadership, Jack Deeds, CPA brings precision and integrity to real estate. As a family business since 1880, we offer transparent service, full-service property solutions, and our unique &quot;Good Deeds&quot; philosophy that prioritizes your best interests.
                 </div>
               </div>
 
               {/* FAQ Item 4 */}
               <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow duration-200 group">
                 <div className="flex justify-between items-center w-full text-left font-bold text-lg text-[#111827] group-hover:text-[#002D72] transition-colors duration-200">
-                  Do you offer same-day appointments?
+                  Can you help with property renovations before selling?
                   <svg 
                     className="w-5 h-5 text-[#002D72] transition-transform duration-200 group-hover:rotate-180" 
                     fill="none" 
@@ -621,14 +626,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-[#6B7280] leading-relaxed transition-all duration-300 overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100">
-                  Yes, same-day service is available for most appliance repairs depending on availability.
+                  Yes! Through our partnership with Bettar Services, we can help you prepare your property for sale with professional renovations, repairs, and upgrades. We offer everything from kitchen and bathroom remodels to handyman services, ensuring your home is market-ready and move-in ready.
                 </div>
               </div>
 
               {/* FAQ Item 5 */}
               <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow duration-200 group">
                 <div className="flex justify-between items-center w-full text-left font-bold text-lg text-[#111827] group-hover:text-[#002D72] transition-colors duration-200">
-                  Are your services insured and guaranteed?
+                  How do I schedule a consultation?
                   <svg 
                     className="w-5 h-5 text-[#002D72] transition-transform duration-200 group-hover:rotate-180" 
                     fill="none" 
@@ -639,7 +644,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-[#6B7280] leading-relaxed transition-all duration-300 overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100">
-                  Absolutely. All our services come with full insurance coverage and a satisfaction guarantee.
+                  You can schedule a consultation by calling us at 202-297-2432, emailing jack@gooddeeds.com, or using our contact form. We&apos;re committed to processing your information quickly and ensuring a prompt response to all inquiries about buying, selling, or enhancing your property.
                 </div>
               </div>
             </div>
@@ -670,7 +675,7 @@ export default function Home() {
                   <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <span className="text-xl font-bold">Call 301-949-2500</span>
+                  <span className="text-xl font-bold">Call 202-297-2432</span>
                 </div>
 
                 {/* Contact Button */}
@@ -689,7 +694,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <p className="text-sm md:text-base text-[#096DBC] uppercase mb-2">NEWS AND BLOGS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A3387]" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-              Leatest News Feeds
+              Latest News & Market Updates
             </h2>
           </div>
 
@@ -710,24 +715,24 @@ export default function Home() {
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <span className="text-gray-900">William Seklo</span>
+                    <span className="text-gray-900">Jack Deeds</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                     </svg>
-                    <span className="text-gray-900">Apartment</span>
+                    <span className="text-gray-900">Real Estate</span>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                  New Apartment Nice in the Best Canadian Cities
+                  Best Neighborhoods to Buy Property in Washington, DC
                 </h3>
                 <div className="border-t border-gray-200 pt-4 mt-4 flex justify-between items-center">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span>July 10, 2022</span>
+                    <span>January 15, 2025</span>
                   </div>
                   <a href="#" className="text-[#096DBC] font-semibold uppercase text-sm hover:underline">
                     READ MORE
@@ -752,24 +757,24 @@ export default function Home() {
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <span className="text-gray-900">Michel Seklo</span>
+                    <span className="text-gray-900">Jack Deeds</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                     </svg>
-                    <span className="text-gray-900">Apartment</span>
+                    <span className="text-gray-900">Bethesda</span>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                  Diamond Manor Apartment in the New York
+                  Luxury Properties Available in Bethesda and Chevy Chase
                 </h3>
                 <div className="border-t border-gray-200 pt-4 mt-4 flex justify-between items-center">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span>July 13, 2022</span>
+                    <span>January 8, 2025</span>
                   </div>
                   <a href="#" className="text-[#096DBC] font-semibold uppercase text-sm hover:underline">
                     READ MORE
@@ -794,24 +799,24 @@ export default function Home() {
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <span className="text-gray-900">Adam Smith</span>
+                    <span className="text-gray-900">Jack Deeds</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                     </svg>
-                    <span className="text-gray-900">Apartment</span>
+                    <span className="text-gray-900">Kensington</span>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                  Unveils the Best Canadian Cities for Biking
+                  Real Estate Market Trends in Kensington, Maryland
                 </h3>
                 <div className="border-t border-gray-200 pt-4 mt-4 flex justify-between items-center">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <svg className="w-4 h-4 text-[#096DBC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span>July 15, 2022</span>
+                    <span>December 20, 2024</span>
                   </div>
                   <a href="#" className="text-[#096DBC] font-semibold uppercase text-sm hover:underline">
                     READ MORE
