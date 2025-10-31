@@ -823,7 +823,7 @@ export default function Home() {
 
           {/* View All Button */}
           <div className="flex justify-center">
-            <button className="bg-white border-2 border-[#096DBC] text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-[#096DBC] hover:text-white transition-colors inline-flex items-center gap-2">
+            <button className="bg-white border-1 border-[#096DBC] text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-[#096DBC] hover:text-white transition-colors inline-flex items-center gap-2">
               View All
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
