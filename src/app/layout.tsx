@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Good Deeds - Real Estate Done Right",
   description: "Good Deeds - Your trusted partner for real estate services in Washington, DC. Buy, sell, and rent homes with expert guidance. Home renovations, plumbing, handyman services, and appliance sales through Bettar Services.",
+  icons: {
+    icon: "/gooddeedslogo.ico",
+  },
 };
 
 export default function RootLayout({
