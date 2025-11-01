@@ -20,7 +20,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Rittenhouse ST, NW Washington, DC 20015
+                3620 Rittenhouse ST NW Washington DC 20015
               </div>
               <a href="mailto:jack@gooddeeds.com" className="flex items-center gap-2 hover:text-gray-200">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -882,7 +882,7 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <span className="text-lg">10503 Wheatley St, Kensington, MD 20895, United States</span>
+                      <span className="text-lg">3620 Rittenhouse ST NW Washington DC 20015</span>
                     </div>
                   </div>
                 </div>
