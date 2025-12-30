@@ -39,8 +39,8 @@ export default function Services() {
               <p className="text-gray-600 mb-6">
                 Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.
               </p>
-              <a href="/properties" className="text-[#096DBC] font-semibold hover:underline">
-                Find A Home →
+              <a href="/services/buy-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
 
@@ -57,8 +57,8 @@ export default function Services() {
               <p className="text-gray-600 mb-6">
                 Find the perfect rental property that fits your lifestyle and budget. We help you navigate the rental market with ease.
               </p>
-              <a href="/properties" className="text-[#096DBC] font-semibold hover:underline">
-                Find A Rental →
+              <a href="/services/rent-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
 
@@ -75,8 +75,8 @@ export default function Services() {
               <p className="text-gray-600 mb-6">
                 Get the best value for your property with our expert guidance and marketing strategies.
               </p>
-              <a href="/contact-us" className="text-[#096DBC] font-semibold hover:underline">
-                List Your Home →
+              <a href="/services/sell-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
           </div>

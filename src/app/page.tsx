@@ -203,8 +203,8 @@ export default function Home() {
               <p className="text-gray-600 mb-6 text-sm md:text-base">
                 Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.
               </p>
-              <a href="#" className="text-[#096DBC] font-semibold hover:underline">
-                Find A Home →
+              <a href="/services/buy-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
 
@@ -221,8 +221,8 @@ export default function Home() {
               <p className="text-gray-600 mb-6 text-sm md:text-base">
                 Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.
               </p>
-              <a href="#" className="text-[#096DBC] font-semibold hover:underline">
-                Find A Home →
+              <a href="/services/rent-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
 
@@ -239,8 +239,8 @@ export default function Home() {
               <p className="text-gray-600 mb-6 text-sm md:text-base">
                 Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.
               </p>
-              <a href="#" className="text-[#096DBC] font-semibold hover:underline">
-                Find A Home →
+              <a href="/services/sell-a-home" className="text-[#096DBC] font-semibold hover:underline">
+                Learn More →
               </a>
             </div>
           </div>

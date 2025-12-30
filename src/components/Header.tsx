@@ -88,9 +88,9 @@ export default function Header() {
                 </a>
                 {/* Dropdown Menu */}
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <a href="/services#buy" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Buy a Home</a>
-                  <a href="/services#sell" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Sell a Home</a>
-                  <a href="/services#rent" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Rent a Home</a>
+                  <a href="/services/buy-a-home" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Buy a Home</a>
+                  <a href="/services/sell-a-home" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Sell a Home</a>
+                  <a href="/services/rent-a-home" className="block px-4 py-2 text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors">Rent a Home</a>
                 </div>
               </div>
               <a href="/contact-us" className="text-gray-900 hover:text-blue-600 font-medium">Contact Us</a>
