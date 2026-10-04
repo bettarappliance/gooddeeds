@@ -1,103 +1,104 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
+import Link from "next/link";
+import PageFrame from "@/components/PageFrame";
+import ContactCTA from "@/components/ContactCTA";
+export const metadata: Metadata = {
+  title: "About Jack Deeds, CPA",
+  description:
+    "Meet Jack Deeds, CPA: financial leader, business owner, and property investor. Explore Good Deeds accounting and property services.",
+  alternates: { canonical: "/about" },
+};
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* About Jack Deeds Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Image */}
-            <div>
-              <Image 
-                src="/jack.jpg" 
-                alt="Jack Deeds, CPA" 
-                width={600} 
-                height={800}
-                className="rounded-lg object-cover w-full"
-              />
-            </div>
-
-            {/* Right Column - Content */}
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-                About Jack Deeds, CPA
-              </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-                With over 30 years of experience in financial management and business leadership, 
-                Jack Deeds brings precision, integrity, and a results-oriented approach to real estate. 
-                His "Good Deeds" philosophy centers on helping clients navigate the complexities of 
-                buying and selling properties with transparency and trust.
-              </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-                Jack partners with <span className="text-[#096DBC] font-semibold">Bettar Services</span> to 
-                provide comprehensive property solutions, from real estate transactions to home repairs and 
-                appliance services, ensuring every client receives exceptional care from start to finish.
-              </p>
-
-              {/* Key Highlights */}
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#096DBC] rounded-full flex items-center justify-center mt-1">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                  </div>
-                  <p className="text-lg text-gray-700">30+ Years in Finance & Business Leadership</p>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#096DBC] rounded-full flex items-center justify-center mt-1">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <p className="text-lg text-gray-700">Serving Clients Across Washington, DC</p>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#096DBC] rounded-full flex items-center justify-center mt-1">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <p className="text-lg text-gray-700">Partnering with Bettar Services for Full-Service Property Solutions</p>
-                </div>
-              </div>
-
-              {/* Know More Button */}
-              <div className="flex justify-end">
-                <button className="flex items-center gap-3 bg-white border-2 border-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:border-[#096DBC] hover:text-[#096DBC] transition-colors">
-                  Know More
-                  <div className="w-6 h-6 bg-[#096DBC] rounded-full flex items-center justify-center">
-                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
+    <PageFrame>
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-14 sm:py-20 md:grid-cols-[.75fr_1fr]">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+          <Image
+            src="/jack.jpg"
+            alt="John ‘Jack’ Deeds"
+            fill
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div>
+          <p className="eyebrow">John “Jack” Deeds, CPA</p>
+          <h1 className="mt-4 font-serif text-5xl sm:text-6xl">
+            Numbers matter.
+            <br />
+            People matter, too.
+          </h1>
+          <p className="mt-6 text-lg leading-relaxed text-gray-600">
+            My work has always been about making good decisions with the
+            information in front of us. As a CPA and financial leader, I help
+            connect the numbers to the work. As a business owner and property
+            investor, I understand what it means to put those decisions into
+            practice.
+          </p>
+          <p className="mt-5 text-lg leading-relaxed text-gray-600">
+            Good Deeds brings that perspective to two conversations: how to run
+            the financial side of a business, and how to make your next property
+            decision. Both begin with listening, clear expectations, and
+            practical next steps.
+          </p>
+          <Link href="/contact-us" className="button-primary mt-8">
+            Start a conversation
+          </Link>
+        </div>
+      </section>
+      <section className="bg-[#F8F6F1]">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <h2 className="font-serif text-4xl">
+            Three kinds of experience. One approach.
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Financial leadership",
+                body: "CFO, controller, and finance-director experience across accounting operations, reporting, cash flow, systems, and government-contracting environments.",
+                href: "/accounting",
+                action: "Explore accounting support",
+              },
+              {
+                title: "Business operations",
+                body: "An owner's perspective on people, customers, workflow, and the daily decisions behind a business.",
+                href: "/accounting",
+                action: "Connect operations and finance",
+              },
+              {
+                title: "Homes & property",
+                body: "Hands-on experience with property investment, renovation, and furnished rentals, alongside a Maryland real estate license.",
+                href: "/properties",
+                action: "Explore the property collection",
+              },
+            ].map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-[#132B3E]/15 bg-white p-7"
+              >
+                <h3 className="font-serif text-2xl">{item.title}</h3>
+                <p className="mt-4 leading-relaxed text-gray-600">
+                  {item.body}
+                </p>
+                <a
+                  href={item.href}
+                  className="mt-6 inline-block font-semibold text-[#096DBC] underline underline-offset-4"
+                >
+                  {item.action} →
+                </a>
+              </article>
+            ))}
           </div>
-        </div>
-      </section>
-
-      {/* Quote Footer */}
-      <section className="bg-[#096DBC] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-3xl md:text-4xl lg:text-4xl text-white italic mb-4 leading-tight" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-            "Real estate isn't just about transactions – it's about helping people make the best decisions for their future.
-            Every deal is an opportunity to do a good deed."
-          </p>
-          <p className="text-xl md:text-2xl text-white text-right italic mt-8" style={{ fontFamily: "'Times New Roman', Times, serif", fontWeight: 'normal' }}>
-            Jack Deeds, CPA
+          <p className="mt-8 max-w-3xl leading-relaxed text-gray-600">
+            Good Deeds is my personal business identity: practical financial
+            insight, hands-on property experience, and attention to the people
+            behind each decision.
           </p>
         </div>
       </section>
-
-      <Footer />
-    </div>
+      <ContactCTA />
+    </PageFrame>
   );
 }
