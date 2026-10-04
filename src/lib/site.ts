@@ -44,7 +44,7 @@ export const properties: Property[] = [
     category: "Residential",
     location: "Chevy Chase · Washington, DC",
     description:
-      "Part of the Rittenhouse residential collection in Chevy Chase. Contact Jack to discuss the residence, arrangements, and future dates.",
+      "The Spanish-themed residence on the second and third floors of the Rittenhouse property. Contact Jack to discuss arrangements and future dates.",
     source:
       "https://www.zillow.com/homedetails/3618-Rittenhouse-St-NW-Washington-DC-20015/2062365596_zpid/",
     intent: "Rent",
@@ -55,7 +55,7 @@ export const properties: Property[] = [
     category: "Residential",
     location: "Chevy Chase · Washington, DC",
     description:
-      "A Rittenhouse Street residence in an established Washington neighborhood. Ask about the home and the right fit for your stay.",
+      "The downstairs, first-floor residence at the Rittenhouse property in Chevy Chase. Ask Jack about the home, arrangements, and future dates.",
     source:
       "https://www.zillow.com/homedetails/3620-Rittenhouse-St-NW-Washington-DC-20015/448825_zpid/",
     intent: "Rent",

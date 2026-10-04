@@ -6,6 +6,8 @@ GoodDeeds is Jack Deeds’ personal accounting and property business identity. N
 ## Property collection
 Residential: 3618 and 3620 Rittenhouse Street NW, 3420 Patterson Street NW, 5815 Nevada Avenue NW, and 2215 Reedie Drive. Commercial: Ennals and Wheatley. Inclusion is portfolio presentation, not current availability.
 
+Confirmed by Jack: 3620 Rittenhouse is the downstairs first-floor residence; 3618 Rittenhouse is the Spanish-themed residence on the second and third floors.
+
 Existing Patterson and Nevada image assets are retained. Rittenhouse photos are not assigned to a numbered address until the mapping is confirmed. Reedie and commercial properties use typographic cards pending confirmed photographs. Existing Airbnb links remain together in a Rittenhouse section without an unverified numbered-address mapping.
 
 ## Verify before publication
