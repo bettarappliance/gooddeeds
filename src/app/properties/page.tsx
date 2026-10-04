@@ -5,7 +5,7 @@ import ContactCTA from "@/components/ContactCTA";
 export const metadata: Metadata = {
   title: "Residential & Commercial Properties",
   description:
-    "Explore the Good Deeds residential and commercial portfolio: Rittenhouse, Patterson, Nevada, Reedie, Ennals, and Wheatley.",
+    "Explore the Good Deeds residential and commercial portfolio: Rittenhouse, Patterson, Nevada, Reedie, Ennalls, and Wheatley.",
   alternates: { canonical: "/properties" },
 };
 export default function Properties() {

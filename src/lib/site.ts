@@ -97,18 +97,18 @@ export const properties: Property[] = [
   },
   {
     slug: "ennals",
-    name: "Ennals",
+    name: "2515 & 2517 Ennalls Avenue",
     category: "Commercial",
-    location: "Maryland · Commercial portfolio",
+    location: "Silver Spring, MD 20902",
     description:
       "A commercial property in the Good Deeds portfolio. Contact Jack for property-specific information and leasing inquiries.",
     intent: "General",
   },
   {
     slug: "wheatley",
-    name: "Wheatley",
+    name: "10503 Wheatley Street",
     category: "Commercial",
-    location: "Kensington · Maryland",
+    location: "Kensington, MD 20895",
     description:
       "A commercial property on Wheatley Street, with space supporting local business activity. Ask Jack about the property and future possibilities.",
     intent: "General",
