@@ -43,7 +43,7 @@ export default async function Contact({
               jack@gooddeeds.com
             </a>
           </div>
-          <ContactInquiry initialIntent={intent} />
+          <ContactInquiry initialIntent={intent} deliveryEnabled={process.env.INQUIRY_DELIVERY_ENABLED === "true" && Boolean(process.env.RESEND_API_KEY && process.env.INQUIRY_FROM_EMAIL)} />
         </div>
         <div className="mt-12"><BettarHandoff /></div>
       </section>

@@ -15,13 +15,10 @@ export default function Privacy() {
         <div className="mt-8 space-y-7 leading-relaxed text-gray-600">
           <div>
             <h2 className="font-serif text-2xl text-[#132B3E]">
-              Preparing an inquiry
+              Sending an inquiry
             </h2>
             <p className="mt-3">
-              The inquiry tool prepares an email draft in your browser.
-              Preparing or copying the draft does not send it to Good Deeds. To
-              contact Jack, send the draft through your email provider, email
-              jack@gooddeeds.com directly, or call 202-297-2432.
+              When direct submission is available, this form sends your contact and project details to Jack through Resend, our email-delivery provider. Good Deeds uses these details to respond to your inquiry. If the form offers an email draft instead, preparing or copying it does not send it; you must send it through your email provider. You can also email jack@gooddeeds.com directly or call 202-297-2432.
             </p>
           </div>
           <div>

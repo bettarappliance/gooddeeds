@@ -1,0 +1,22 @@
+const assert = require('node:assert/strict');
+const ts = require('typescript');
+const fs = require('node:fs');
+const Module = require('node:module');
+const mod = new Module('inquiry', module);
+mod._compile(ts.transpileModule(fs.readFileSync('src/app/api/inquiry/route.ts','utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText, 'inquiry');
+const { POST } = mod.exports;
+const input = { name:'Test Visitor', email:'visitor@example.com', intent:'Accounting', message:'Test inquiry' };
+const request = (body=input, origin='https://www.gooddeeds.com') => new Request('https://www.gooddeeds.com/api/inquiry',{method:'POST',headers:{origin,'content-type':'application/json'},body:JSON.stringify(body)});
+(async()=>{
+ assert.equal((await POST(request(input,'https://other.example'))).status,403);
+ assert.equal((await POST(request({...input,email:'invalid'}))).status,400);
+ assert.equal((await POST(request({...input,website:'spam'}))).status,400);
+ assert.equal((await POST(request())).status,503);
+ process.env.INQUIRY_DELIVERY_ENABLED='true';process.env.RESEND_API_KEY='test-only';process.env.INQUIRY_FROM_EMAIL='Good Deeds <website@updates.gooddeeds.com>';
+ let calls=0;
+ global.fetch=async(url,opts)=>{calls++;const body=JSON.parse(opts.body);assert.deepEqual(body.to,['jack@gooddeeds.com']);assert.equal(body.reply_to,input.email);assert.ok(opts.headers['Idempotency-Key']);return Response.json({id:'test-id'});};
+ assert.deepEqual(await (await POST(request())).json(),{accepted:true});assert.equal(calls,1);
+ global.fetch=async()=>Response.json({error:'provider rejected'},{status:403});assert.equal((await POST(request())).status,502);
+ global.fetch=async()=>{throw new Error('timeout')};assert.equal((await POST(request())).status,502);
+ console.log('7 inquiry checks passed: origin, validation, spam field, missing configuration, routing/acceptance, rejection, timeout. No real emails sent.');
+})().catch(e=>{console.error(e);process.exit(1)});

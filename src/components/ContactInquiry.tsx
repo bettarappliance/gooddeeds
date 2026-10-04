@@ -11,17 +11,41 @@ const intentLabels: Record<string, string> = {
 const intents = Object.keys(intentLabels);
 export default function ContactInquiry({
   initialIntent = "General",
+  deliveryEnabled = false,
 }: {
   initialIntent?: string;
+  deliveryEnabled?: boolean;
 }) {
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
   const [draft, setDraft] = useState("");
   const [notice, setNotice] = useState("");
   const [intent, setIntent] = useState(
     intents.includes(initialIntent) ? initialIntent : "General",
   );
-  function prepare(event: React.FormEvent<HTMLFormElement>) {
+  async function prepare(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    if (deliveryEnabled) {
+      if (sending) return;
+      setSending(true);
+      setSent(false);
+      setNotice("");
+      try {
+        const response = await fetch("/api/inquiry", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...Object.fromEntries(data), intent }),
+        });
+        const result = await response.json();
+        if (!response.ok || !result.accepted) throw new Error(result.error || "Unable to send. Please email Jack directly.");
+        setSent(true);
+        setNotice("Your inquiry has been submitted to Jack. Thank you for getting in touch.");
+      } catch (error) {
+        setNotice(error instanceof Error ? error.message : "Unable to send. Please email jack@gooddeeds.com.");
+      } finally { setSending(false); }
+      return;
+    }
     setDraft(
       [
         `Hello Jack,`,
@@ -53,10 +77,14 @@ export default function ContactInquiry({
     <div className="rounded-2xl border border-[#132B3E]/15 bg-white p-6 sm:p-8">
       <h2 className="font-serif text-3xl">Start with a few details.</h2>
       <p className="mt-3 leading-relaxed text-gray-600">
-        Prepare an email to Jack, then send it from your email app. For a
-        quicker conversation, call 202-297-2432.
+        {deliveryEnabled ? "Send your inquiry directly to Jack using this form." : "Prepare an email to Jack, then send it from your email app."} For a quicker conversation, call 202-297-2432.
       </p>
-      <form onSubmit={prepare} className="mt-6 space-y-5">
+      <form onSubmit={prepare} onChange={() => { setSent(false); setNotice(""); }} className="mt-6 space-y-5">
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="inquiry-website">Leave this field blank</label>
+          <input id="inquiry-website" name="website" tabIndex={-1} autoComplete="off" />
+        </div>
+        <fieldset disabled={sending} className="space-y-5">
         <div>
           <label
             htmlFor="inquiry-intent"
@@ -103,12 +131,13 @@ export default function ContactInquiry({
               htmlFor="inquiry-email"
               className="mb-2 block text-sm font-semibold"
             >
-              Reply email <span className="text-gray-500">(optional)</span>
+              Reply email <span className="text-gray-500">({deliveryEnabled ? "required" : "optional"})</span>
             </label>
             <input
               id="inquiry-email"
               name="email"
               type="email"
+              required={deliveryEnabled}
               autoComplete="email"
               maxLength={254}
               className="w-full rounded-lg border border-gray-300 p-3"
@@ -184,10 +213,12 @@ export default function ContactInquiry({
             documents, and other sensitive information.
           </p>
         </div>
-        <button type="submit" className="button-primary">
-          Prepare my inquiry
+        <button type="submit" disabled={sending || sent} className="button-primary disabled:opacity-60">
+          {sending ? "Sending…" : sent ? "Submitted" : deliveryEnabled ? "Send my inquiry" : "Prepare my inquiry"}
         </button>
+      </fieldset>
       </form>
+      {deliveryEnabled && notice && <p role="status" className="mt-4 text-sm">{notice}</p>}
       {draft && (
         <div className="mt-7 border-t border-gray-200 pt-6">
           <p role="status" className="font-semibold">
