@@ -24,3 +24,8 @@ Public Zillow property pages linked in the property registry. Patterson’s dire
 
 ## Validation
 Run production build, TypeScript, ESLint. Preview deployment and visual review remain separate checks. Keep the pull request draft and do not merge or publish production during this rewrite.
+
+## Partner introduction and refreshed photos
+The homepage, preparation page, and contact page introduce Bettar Appliance Master as a service partner and offer a direct team contact link and telephone handoff. This does not send or forward an inquiry automatically. Email introductions need a confirmed Bettar recipient and a configured delivery provider.
+
+New Zillow photo assets are documented in property-photo-sources.json. Patterson and Nevada receive five photos each; both Rittenhouse pages receive shared exterior views only. Reedie’s older-looking exterior is excluded. Source availability does not verify photo capture dates.

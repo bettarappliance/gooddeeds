@@ -1,3 +1,4 @@
+import BettarHandoff from "@/components/BettarHandoff";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -73,34 +74,7 @@ export default function Prepare() {
             </article>
           ))}
         </div>
-        <div className="mt-10 rounded-2xl bg-[#132B3E] p-8 text-white sm:p-10">
-          <p className="text-xs font-bold uppercase tracking-widest text-white/70">
-            A separate service team
-          </p>
-          <h2 className="mt-4 font-serif text-4xl">Bettar Appliance Master</h2>
-          <p className="mt-5 max-w-3xl leading-relaxed text-white/80">
-            For appliance repair, replacement, delivery, installation, or
-            home-service work, contact Bettar directly. The Bettar team confirms
-            service scope, pricing, and scheduling.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <a
-              href="https://www.bettarservices.com/request-service"
-              className="button-light"
-            >
-              Request appliance repair ↗
-            </a>
-            <a
-              href="https://www.bettarservices.com/contact"
-              className="inline-flex items-center rounded-lg border border-white/40 px-6 py-3 font-semibold"
-            >
-              Discuss home-service work ↗
-            </a>
-          </div>
-          <p className="mt-5 text-sm text-white/70">
-            Bettar: 301-949-2500 · Kensington, MD
-          </p>
-        </div>
+        <div className="mt-10"><BettarHandoff /></div>
       </section>
       <ContactCTA intent="Prepare" />
     </PageFrame>

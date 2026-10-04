@@ -1,3 +1,4 @@
+import BettarHandoff from "@/components/BettarHandoff";
 import type { Metadata } from "next";
 import PageFrame from "@/components/PageFrame";
 import ContactInquiry from "@/components/ContactInquiry";
@@ -41,19 +42,10 @@ export default async function Contact({
             >
               jack@gooddeeds.com
             </a>
-            <p className="mt-8 text-sm leading-relaxed text-gray-600">
-              For Bettar appliance and home-service inquiries, contact the
-              Bettar team directly.
-            </p>
-            <a
-              href="https://www.bettarservices.com/contact"
-              className="mt-3 inline-block text-sm font-semibold text-[#096DBC] underline underline-offset-4"
-            >
-              Contact Bettar Appliance Master ↗
-            </a>
           </div>
           <ContactInquiry initialIntent={intent} />
         </div>
+        <div className="mt-12"><BettarHandoff /></div>
       </section>
     </PageFrame>
   );

@@ -93,6 +93,7 @@ export default async function PropertyPage({
           </div>
         </div>
       </section>
+      {p.gallery && p.gallery.length > 1 && <section className="mx-auto max-w-7xl px-6 pb-16"><h2 className="mb-7 font-serif text-4xl">A closer look</h2><div className="grid gap-5 sm:grid-cols-2">{p.gallery.slice(1).map((src, index) => <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-2xl"><Image src={src} alt={`${p.name} listing photo ${index + 2}`} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" /></div>)}</div></section>}
       <ContactCTA title="Every property decision starts with a conversation." />
     </PageFrame>
   );

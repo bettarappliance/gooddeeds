@@ -31,7 +31,7 @@ export default function Rent() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
-              src="/rent2.1.jpg"
+              src="/properties/3420-patterson-04.webp"
               alt="Furnished home with separate living and work spaces"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

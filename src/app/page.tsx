@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BettarHandoff from "@/components/BettarHandoff";
 import Link from "next/link";
 import PageFrame from "@/components/PageFrame";
 import ContactCTA from "@/components/ContactCTA";
@@ -161,32 +162,7 @@ export default function Home() {
           confirm availability, pricing, and stay requirements.
         </p>
       </section>
-      <section className="bg-[#F8F6F1]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-2">
-          <div>
-            <p className="eyebrow">Before the next chapter</p>
-            <h2 className="mt-4 font-serif text-4xl sm:text-5xl">
-              Prepare the home.
-              <br />
-              Protect the budget.
-            </h2>
-          </div>
-          <div>
-            <p className="text-lg leading-relaxed text-gray-600">
-              Selling, moving in, or getting a rental ready? A practical plan
-              starts with condition, priorities, and scope. Bettar Appliance
-              Master offers a separate path for appliance repair, replacement,
-              delivery, installation, and home-service inquiries.
-            </p>
-            <Link
-              href="/prepare-your-home"
-              className="mt-6 inline-block font-semibold text-[#096DBC] underline underline-offset-4"
-            >
-              Plan your home preparation →
-            </Link>
-          </div>
-        </div>
-      </section>
+      <div className="mx-auto max-w-7xl px-6 pb-16"><BettarHandoff /></div>
       <ContactCTA />
     </PageFrame>
   );
