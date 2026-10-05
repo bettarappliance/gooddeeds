@@ -1,0 +1,78 @@
+{
+  "retrieved": "2026-10-04",
+  "notes": "User authorized downloading and using listing photographs. Patterson and Nevada use publicly retrieved Zillow photos. Rittenhouse uses shared-building exterior views only because public unit-photo assignments conflict with the owner-confirmed floors. Reedie photo excluded because it appears older than the renovation. Airbnb could not be retrieved. Photo capture dates are unverified.",
+  "photos": [
+    {
+      "path": "public/properties/3420-patterson-01.webp",
+      "source": "https://photos.zillowstatic.com/fp/88c62fc88bbad4074dbab8d244bd052c-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3420-patterson-02.webp",
+      "source": "https://photos.zillowstatic.com/fp/d63ea1de18bbeae008fed255df35b8bb-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3420-patterson-03.webp",
+      "source": "https://photos.zillowstatic.com/fp/209310edbdfde23d0ab234cd7079b45b-cc_ft_1152.jpg",
+      "width": 1086,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3420-patterson-04.webp",
+      "source": "https://photos.zillowstatic.com/fp/09be58f7950657540eb4efd6d966b841-cc_ft_1152.jpg",
+      "width": 1122,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3420-patterson-05.webp",
+      "source": "https://photos.zillowstatic.com/fp/55827671c1b4423fab789c51309e8606-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/5815-nevada-01.webp",
+      "source": "https://photos.zillowstatic.com/fp/aa129bd7b41e91e861824539af27fc0d-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/5815-nevada-02.webp",
+      "source": "https://photos.zillowstatic.com/fp/b1ee2de80f9063b5f4abb904ea2de9df-cc_ft_1152.jpg",
+      "width": 1086,
+      "height": 864
+    },
+    {
+      "path": "public/properties/5815-nevada-03.webp",
+      "source": "https://photos.zillowstatic.com/fp/e6d084038e4f60f5e151001a183c0207-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/5815-nevada-04.webp",
+      "source": "https://photos.zillowstatic.com/fp/4302baa39f78c410d32204799665d6e2-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/5815-nevada-05.webp",
+      "source": "https://photos.zillowstatic.com/fp/6d80d562b58a06168bf7e355eeacde7e-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3618-rittenhouse-01.webp",
+      "source": "https://photos.zillowstatic.com/fp/572f9e5bde948e34d0f2acd4584bf50e-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    },
+    {
+      "path": "public/properties/3620-rittenhouse-03.webp",
+      "source": "https://photos.zillowstatic.com/fp/ffcad5cbedc50f8ee89534262585bf40-cc_ft_1152.jpg",
+      "width": 1152,
+      "height": 864
+    }
+  ]
+}
